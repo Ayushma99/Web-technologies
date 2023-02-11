@@ -1,33 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <meta name="keywords" content="noindex, follow">
-        <meta name="description" content="This is description">
-        <meta name="robots" content="NOINDEX, NOFOLLOW">
-        <meta name="stylesheet" href="index.css">
-       <title>Document</title>
-    </head>
-    <body>
-        <h1>Ada Lovelace</h1>
-        <header>
-            <img src="adalovelace.webp" alt="adalovelace.webp" width="200" height="250"
-
-          <div>
-            <p>
-                Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first computer programmer.
-
-            </p>
-            <p>
-                Between 1842 and 1843, Ada translated an article by Italian military engineer Luigi Menabrea about the Analytical Engine, supplementing it with an elaborate set of notes, simply called "Notes". Lovelace's notes are important in the early history of computers, containing what many consider to be the first computer program—that is, an algorithm designed to be carried out by a machine. Other historians reject this perspective and point out that Babbage's personal notes from the years 1836/1837 contain the first programs for the engine.[10] She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities.[11] Her mindset of "poetical science" led her to ask questions about the Analytical Engine (as shown in her notes) examining how individuals and society relate to technology as a collaborative tool.
-            
-            </p> 
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushma Chudal</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#AboutMe">AboutMe</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#ContactMe">ContactMe</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1> Hi everyone, I am 
+                    <span>Ayushma Chudal.</span></h1>
+            </div>
         </div>
-        <p>
-            In 1833 Ada Lovelace met the mathematician Charles Babbage, who had designed a calculating machine called the Difference Engine. Lovelace was inspired by the prototype of the Difference Engine and became Babbage's lifelong friend. Babbage had a new project in mind, a much more-advanced machine, the Analytical Engine. In 1843 Lovelace translated a French paper that Italian mathematician Luigi Menabrea wrote about the Analytical Engine. She also added thousands of words of her own notes to the paper. Lovelace realized that the Analytical Engine could carry out an extensive sequence of mathematical operations. The example she wrote of one such sequence—how to calculate Bernoulli numbers—is regarded by computer historians as the first computer program. She even speculated that the Analytical Engine could be used to perform operations on "other things besides number," such as musical notes.
-        </p>
-    </body>
+    </div>
+    <!-- ----about----- -->
+    <div id="AboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/aboutmepic.jpg" width="100px" height="100vh">
+                    </div>
+
+                    <div class="about-col2"></div>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                       It is my personal website and
+                        This section contains everything you want to know about me.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                <p class="tab-links"onclick="opentab('Family')">Family</p>
+                <p class="tab-links"onclick="opentab('Hobbies')">Hobbies</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="Education">
+                <ul>
+                    <Li><span>Secondary Education Examination from Jhapa</span></Li>
+                    <Li><span>Intermediate level, Biology major, from NEB</span></Li>
+                    <Li><span>Currently studying Computer Science at Herald College Kathmandu</span></Li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Family">
+                <ul>
+                    <Li><span> My mother is a teacher and my father is a businessman.</span></Li>
+                    <Li><span>I have a sibling, his name is Ayush.</span></Li>
+                    
+                </ul>
+                </div>
+                <div class="tab-contents" id="Hobbies">
+                    <ul>
+                        <Li><span>Singing is one of my favorite Hobbies.</span></Li>
+                        <Li><span>I also love to read novels.</span></Li>
+                        
+                    </ul>
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="Portfolio-list">
+                <div>
+                    <h2>Work experience</h2>
+                    <p> Volunteered at Blood donation program organized by Red Cross Society.</p>
+                </div>
+                <div>
+                    <h2>Projects</h2>
+                    <p>Relief fund for Covid-19 pandemic victims.</p>
+                </div>
+                <div>
+                    <h2>Technical skills</h2>
+                    <p>Python, Java, HTML, CSS and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --contact -->
+    <div id="ContactMe">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class='sub-title'>Contact Me</h1>
+                    <p>ashchudal5@gmail.com</p>
+                    <p>9817096247</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ='0';
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+
+        }
+        
+    </script>
+</body>
 </html>
